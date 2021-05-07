@@ -1,17 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
+@import "./navigation";
+@import "./footer";
 
-*{
-    background:black;
+img {
+  margin: 10px;
+  color: white;
+  height: 100%;
+  width: 98%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.4;
 }
 
-p{
-    font-family: 'Zen Dots', cursive;
-    color: white;
-}
-
-
-img{
-    width: 100vh;
-    position: relative;
-    left: 27%;
+p {
+  font-family: "Zen Dots", cursive;
+  color: black;
 }

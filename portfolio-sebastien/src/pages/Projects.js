@@ -1,11 +1,13 @@
 import React from 'react';
+import { Navigation } from "../pages/Navigation";
 
-const Projects = () => {
+export const Projects = () => {
     return (
         <div>
-            
+            <Navigation/>
+            <p>Je suis la page projects</p>
         </div>
     );
 };
 
-export default Projects;
+

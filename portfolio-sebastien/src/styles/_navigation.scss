@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+
+.navigation{
+    display: flex;
+    a{
+        margin: 10px;
+        padding:10px; 
+        text-decoration: none;
+        position: relative;
+        font-family: 'Kanit', sans-serif;
+    }
+
+    :hover{
+        color:black;
+        filter: drop-shadow(10px 10px 10px #000000);
+    }
+
+}

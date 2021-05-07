@@ -1,40 +1,12 @@
 import React from "react";
-import { Carousel } from 'react-bootstrap';
+import { Navigation } from "../pages/Navigation";
 
-const tabImg = [
-  "./img/pexels-negative-space-160107.jpg",
-  "./img/IMG_24822.jpg",
-];
 
-const displayImg = tabImg.map((tech) => (
-  <img key={tech} src={tech} alt="computer" />
-));
-
-const Home = () => {
+export const Home = () => {
   return (
-    <div class="container">
-    <Carousel>
-      <Carousel.Item>
-        <img
-          className="d"
-          src="./img/IMG_24822.jpg"
-          alt="First slide"
-        />
-    
-      </Carousel.Item>
-      
-      <Carousel.Item>
-        <img
-          className=""
-          src="./img/pexels-negative-space-160107.jpg"
-          alt="Second slide"
-        />
-      </Carousel.Item>
-  
-    </Carousel>
-
+    <div>
+      <Navigation />
+      <img src="./img/pexels-pixabay-39284.jpg" alt="Computer"/>
     </div>
   );
 };
-
-export default Home;

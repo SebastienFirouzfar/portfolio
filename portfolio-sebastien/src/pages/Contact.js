@@ -1,11 +1,12 @@
 import React from 'react';
+import { Navigation } from './Navigation';
 
-const Contact = () => {
+export const Contact = () => {
     return (
         <div>
-            
+            <Navigation/>
+            <p>je suis la page contact</p>
         </div>
     );
 };
 
-export default Contact;

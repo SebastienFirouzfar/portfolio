@@ -1,11 +1,12 @@
 import React from 'react';
+import { Navigation } from "../pages/Navigation";
 
-const About = () => {
+export const About = () => {
     return (
         <div>
-            
+            <Navigation />
+            <p>je suis le about</p>
         </div>
     );
 };
 
-export default About;
