@@ -2,15 +2,18 @@
 $textCenter : center;
 
 .containerFooter{
-    margin-top: 1%;
+    position: relative;
+    margin-top: 30%;
     border-style: solid; 
     margin: 10px;
+
 }
 
 .row{
-    margin-left: 20%;
+    margin-left: 35%;
 }
 
 h4{
     text-align: $textCenter;
+    top: 20px;
 }
