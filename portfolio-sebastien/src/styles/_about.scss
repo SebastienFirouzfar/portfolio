@@ -1,0 +1,29 @@
+.imgPresentation{
+    position: relative;
+    left:18%;
+    margin: 10px;
+    height: 60%;
+    width: 60%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: drop-shadow(2px 4px 8px #585858);
+}
+
+p{
+    margin: 10px;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+}
+
+.containerCard{
+    display:flex;
+}
+
+.card-img-top{
+    height: 50vh;
+}
+
+  

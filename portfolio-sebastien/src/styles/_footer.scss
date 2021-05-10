@@ -1,19 +1,31 @@
+$textCenter: center;
 
-$textCenter : center;
+.containerFooter {
+  position: relative;
+  margin-top: 30%;
+  border-style: solid;
+  margin: 10px;
 
-.containerFooter{
-    position: relative;
-    margin-top: 30%;
-    border-style: solid; 
-    margin: 10px;
+  #infoFooter {
+    display: block;
+  }
 
-}
-
-.row{
+  .row {
     margin-left: 35%;
+  }
+
+  a {
+    margin: 3px;
+    text-decoration: none;
+  }
+
+  a:hover {
+    filter: drop-shadow(2px 4px 8px #5348e7);
+  }
+
 }
 
-h4{
-    text-align: $textCenter;
-    top: 20px;
+h4 {
+  text-align: $textCenter;
+  top: 20px;
 }

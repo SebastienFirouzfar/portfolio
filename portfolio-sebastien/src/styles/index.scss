@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
 @import "./navigation";
 @import "./footer";
+@import "./about";
 
-img {
+.imgHome {
   margin: 10px;
   color: white;
   height: 100%;
@@ -11,6 +12,7 @@ img {
   background-repeat: no-repeat;
   opacity: 0.4;
 }
+
 
 p {
   font-family: "Zen Dots", cursive;

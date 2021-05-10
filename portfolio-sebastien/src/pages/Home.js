@@ -6,7 +6,7 @@ export const Home = () => {
   return (
     <div>
       <Navigation />
-      <img src="./img/pexels-pixabay-39284.jpg" alt="Computer"/>
+      <img className="imgHome" src="./img/pexels-pixabay-39284.jpg" alt="Computer"/>
     </div>
   );
 };
