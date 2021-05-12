@@ -3,16 +3,17 @@ import { Navigation } from "../pages/Navigation";
 
 
 
-export const About = (props) => {
+
+export const About = () => {
   return (
     <div className="container" class="col-lg-12 col-md-12">
       <Navigation />
       <div class="col-lg-12 col-md-12">
-        <img
+          <img
           className="imgPresentation"
           src="./img/IMG_24822.jpg"
           alt="sebastien"
-        />
+          />
         <p>
           Ayant obtenu le Certificat d’Enseignement d’Etudes Supérieures en
           2017, j’ai par la suite fait deux années d’études supérieures en
@@ -29,38 +30,41 @@ export const About = (props) => {
         </p>
 
         <h1>Mes parcours</h1>
-
-        <div className="container">
-          <div className="row">
-            
-            
-              <div class="card">
-                <img src="./img/BeCode.jpg" class="card-img-top" alt="Sebastien" />
-                <div class="card-body">
-                  <h5 class="card-title"></h5>
-                  <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
-                </div>
-              </div>
-            
-          
-          </div>
-        </div>
-
-
-
       </div>
     </div>
   );
 };
 
-export const List = (list) =>{
 
+export const Card = (props) => {
+  const {infoAbout} = props;
+
+  return (
+      <div className="card">
+       <a href={infoAbout.lien}>  <img src={process.env.PUBLIC_URL + `./img/${infoAbout.image}`} 
+          className="card-img-top" 
+          alt="Sebastien" />  </a> 
+         
+          <div class="card-body">
+            <h1 class="card-title">{infoAbout.nameSchool}</h1>
+            <h5>Année :  {infoAbout.year}</h5>
+            <h5>Option : {infoAbout.options}</h5>
+          </div>
+        </div>
+  )
+
+}
+
+export const List = (props) =>{
+    const {data} = props;
+    const aboutInformation = data[0]
+    console.log(aboutInformation)
+    
     return (
-        <div>
-
+        <div className="container">
+           <div className="row col-lg-12 col-md-6">
+          {aboutInformation.map(infoAbout => <Card infoAbout={infoAbout} /> )}
+          </div>
         </div>
     )
 }

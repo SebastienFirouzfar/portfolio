@@ -20,13 +20,15 @@ h1 {
   text-align: center;
 }
 
+
+
 .row {
   display: flex;
   filter: drop-shadow(2px 4px 8px #585858);
   grid-gap: 30px;
   margin: $margin10;
   position: relative;
-  margin-left: 20%;
+  margin-left: 1%;
 }
 
 .card {
@@ -36,6 +38,6 @@ h1 {
 @media (max-width: 768px) {
   .row {
     position: relative;
-    margin-left: 10%;
+    margin-left: 20%;
   }
 }

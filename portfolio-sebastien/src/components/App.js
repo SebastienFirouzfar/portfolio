@@ -5,7 +5,7 @@ import {BrowserRouter, Switch, Route} from 'react-router-dom'
 import { list } from '../data/dataInfomation'
 
 import { Contact } from '../pages/Contact'
-import { About } from '../pages/About'
+import { About, List } from '../pages/About'
 import { NotFound } from "../pages/NotFound"
 import { Projects } from "../pages/Projects"
 import { Home } from "../pages/Home";
@@ -18,14 +18,15 @@ function App() {
       {/*Switch permet de vérifié que la page existe sinon elle envoie une page d'erreur 404 */}
         <Switch>      
           {/*Qui conrespond au components (composant) de la page Home*/ }
-          <Route exact path="/" component={() => <Home list={list}/> } />
-          <Route path="/about" exact component={About}/>
+          <Route exact path="/" component={Home} />
+          <Route path="/About" exact component={About}/>
           <Route path="/Projects" exact component={Projects}/>
           <Route path="/Contact" exact component={Contact}/>
           <Route component={NotFound}/>
         </Switch>
-        <Footer/>
       </BrowserRouter>
+      <List data={list}/>
+      <Footer/>
     </Fragment>
   );
 }

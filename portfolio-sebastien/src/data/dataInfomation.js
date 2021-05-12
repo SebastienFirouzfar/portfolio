@@ -1,31 +1,35 @@
 const aboutInformation = [
     {
-       nameSchool :'Institut Paul Lambin', 
-       year : "2017 - 2018", 
-       options : "informatique de gestion",
-       image : "ipl_logo.jpg"
+        nameSchool :'Becode', 
+        year : "2020 - 2021", 
+        options : "Developpement web",
+        image : "BeCode.jpg", 
+        lien : "https://becode.org/fr/"
+    }, 
+
+    {
+        nameSchool :'EPFC', 
+        year : "2019 - 2020", 
+        options : "Developpement mobile (Kotlin)",
+        image : "epfc.jpg", 
+        lien : "https://www.epfc.eu/"
     }, 
 
     {
         nameSchool :'He2b Esi', 
         year : "2018 - 2019", 
         options : "informatique de gestion",
-        image : "he2b.jpg"
+        image : "he2b.jpg",
+        lien : "https://www.he2b.be/campus-esi"
     }, 
 
     {
-        nameSchool :'EPFC (Enseignement de Promotion et de Formation Continue)', 
-        year : "2019 - 2020", 
-        options : "Developpement mobile (Kotlin)",
-        image : "epfc.jpg"
-    }, 
-
-    {
-        nameSchool :'Becode', 
-        year : "2020 - 2021", 
-        options : "Developpement web",
-        image : "ipl_logo.jpg"
-    }
+        nameSchool :'Institut Paul Lambin', 
+        year : "2017 - 2018", 
+        options : "informatique de gestion",
+        image : "ipl_logo.jpg", 
+        lien: "https://www.vinci.be/fr/"
+     }
 ]; 
 
 //exporter la liste dans index.js de notre app
