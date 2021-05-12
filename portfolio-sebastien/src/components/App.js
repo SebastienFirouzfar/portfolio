@@ -2,10 +2,9 @@ import React, {Fragment} from "react";
 import "bootstrap/dist/css/bootstrap.css";
 //router, si on met pas le react-router-dom on appel tt react 
 import {BrowserRouter, Switch, Route} from 'react-router-dom'
-import { list } from '../data/dataInfomation'
 
 import { Contact } from '../pages/Contact'
-import { About, List } from '../pages/About'
+import { About } from '../pages/About'
 import { NotFound } from "../pages/NotFound"
 import { Projects } from "../pages/Projects"
 import { Home } from "../pages/Home";
@@ -25,7 +24,6 @@ function App() {
           <Route component={NotFound}/>
         </Switch>
       </BrowserRouter>
-      <List data={list}/>
       <Footer/>
     </Fragment>
   );
