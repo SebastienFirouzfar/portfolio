@@ -5,7 +5,7 @@ export const Projects = () => {
     return (
         <div>
             <Navigation/>
-            <p>Je suis la page projects</p>
+            <h1>Projects</h1>
         </div>
     );
 };

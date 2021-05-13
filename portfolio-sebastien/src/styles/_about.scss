@@ -28,7 +28,7 @@ h1 {
   grid-gap: 30px;
   margin: $margin10;
   position: relative;
-  margin-left: 1%;
+  margin-left: 5%;
 }
 
 .card {
@@ -38,6 +38,6 @@ h1 {
 @media (max-width: 768px) {
   .row {
     position: relative;
-    margin-left: 20%;
+    margin-left: 10%;
   }
 }

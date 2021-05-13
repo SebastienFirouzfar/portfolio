@@ -1,6 +1,9 @@
 import React from "react";
 import { Navigation } from "../pages/Navigation";
-import { List } from '../components/Card'
+
+import { List, ListCompetence } from '../components/Card'
+
+//data
 import { list } from '../data/dataInfomation'
 
 export const About = () => {
@@ -10,7 +13,7 @@ export const About = () => {
       <div class="col-lg-12 col-md-12">
           <img
           className="imgPresentation"
-          src="./img/IMG_24822.jpg"
+          src="./assets/IMG_24822.jpg"
           alt="sebastien"
           />
         <p>
@@ -28,9 +31,12 @@ export const About = () => {
           existantes.
         </p>
 
-        <h1>Mes parcours</h1>
+        <h1>Mes parcours / My career paths</h1>
       </div>
       <List data={list}/>
+      <br/>
+      <h1>Compétence front-end</h1>
+      <ListCompetence data={list}/>
     </div>
   );
 };
