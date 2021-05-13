@@ -17,10 +17,9 @@ $margin10: 10px;
         font-family: 'Staatliches', cursive;
     }
 
-    :hover{
+    :after {
         color:black;
-        filter: drop-shadow(1px 1px 1px #cccbcb);
-        
+        filter: drop-shadow(10px 10px 10px #0e0e0e);
     }
 
 }

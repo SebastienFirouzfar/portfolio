@@ -5,7 +5,7 @@ export const Contact = () => {
     return (
         <div>
             <Navigation/>
-            <p>je suis la page contact</p>
+            <h1>Contact</h1>
         </div>
     );
 };

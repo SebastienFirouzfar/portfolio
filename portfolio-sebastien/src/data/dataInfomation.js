@@ -34,26 +34,31 @@ const aboutInformation = [
 
 const frontEnd = [
     {
+        nameLanguage :'HTML',
         imageLanguage : "html.jpg",
         category : 1
     }, 
 
     {
+        nameLanguage :'CSS',
         imageLanguage : "css.jpg",
         category : 1
     }, 
 
     {
+        nameLanguage :'BOOTSTRAP',
         imageLanguage : "bootstrap.jpg", 
         category : 1
     }, 
 
     {
+        nameLanguage :'JAVASCRIPT',
         imageLanguage : "javascript.jpg", 
         category : 1
     }, 
 
     {
+        nameLanguage :'REACT',
         imageLanguage : "react.jpg", 
         category : 1
     }
@@ -62,15 +67,32 @@ const frontEnd = [
 
 const backEnd = [
     {
-        nameLanguage : "NODE JS", 
-        imageLanguage : "nodejsExpress.jpg"   
+        nameLanguage :'NODE JS',
+        imageLanguage : "nodejsExpress.jpg", 
+        category : 0
     }, 
 
     {
-        nameLanguage : "PHP", 
-        imageLanguage : "php.jpg" 
+        nameLanguage :'PHP',
+        imageLanguage : "php.jpg", 
+        category : 0
     }
 ];
+
+const project = [
+    {
+        nameProject :'NODE JS',
+        urlProject : "nodejsExpress.jpg", 
+        
+    }, 
+
+    {
+        nameLanguage :'PHP',
+        imageLanguage : "php.jpg", 
+        
+    }
+];
+
 //exporter la liste dans index.js de notre app
 //egalement de mettre la liste dans index de components
-export const list = [aboutInformation, frontEnd, backEnd]
+export const list = [aboutInformation, frontEnd, backEnd, project]

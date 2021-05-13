@@ -21,22 +21,33 @@ export const Card = (props) => {
 }
 
 
-export const CardCompetence = (props) => {
+export const CardFrontEnd = (props) => {
   const {infoCompetence} = props;
 
   return (
       <div className="card" >
        <img src={process.env.PUBLIC_URL + `./assets/${infoCompetence.category}/${infoCompetence.imageLanguage}`} 
           className="card-img-top" 
-          alt="Sebastien" />  
+          alt={infoCompetence.nameLanguage}  />  
+      </div>
+  )
+}
+
+export const CardBackEnd = (props) => {
+  const {infoCompetence} = props;
+
+  return (
+      <div className="card">
+       <img src={process.env.PUBLIC_URL + `./assets/${infoCompetence.category}/${infoCompetence.imageLanguage}`} 
+          className="card-img-top" 
+          alt={infoCompetence.nameLanguage} />  
       </div>
   )
 }
 
 
-
 //LIST
-export const ListCompetence = (props) =>{
+export const ListFrontEnd = (props) =>{
   const {data} = props;
   const aboutCompetence = data[1]
   console.log(aboutCompetence)
@@ -44,7 +55,22 @@ export const ListCompetence = (props) =>{
   return (
       <div className="container">
          <div className="row col-lg-12 col-md-6">
-        {aboutCompetence.map(infoCompetence => <CardCompetence infoCompetence={infoCompetence} /> )}
+        {aboutCompetence.map(infoCompetence => <CardFrontEnd infoCompetence={infoCompetence} /> )}
+        </div>
+      </div>
+  )
+}
+
+
+export const ListBackEnd = (props) =>{
+  const {data} = props;
+  const aboutCompetence = data[2]
+  console.log(aboutCompetence)
+  
+  return (
+      <div className="container">
+         <div className="row col-lg-12 col-md-6">
+        {aboutCompetence.map(infoCompetence => <CardBackEnd infoCompetence={infoCompetence} /> )}
         </div>
       </div>
   )

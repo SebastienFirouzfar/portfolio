@@ -1,7 +1,7 @@
 import React from "react";
 import { Navigation } from "../pages/Navigation";
 
-import { List, ListCompetence } from '../components/Card'
+import { List, ListFrontEnd, ListBackEnd } from '../components/Card'
 
 //data
 import { list } from '../data/dataInfomation'
@@ -10,6 +10,7 @@ export const About = () => {
   return (
     <div className="container" class="col-lg-12 col-md-12">
       <Navigation />
+      <h1>About</h1>
       <div class="col-lg-12 col-md-12">
           <img
           className="imgPresentation"
@@ -31,12 +32,15 @@ export const About = () => {
           existantes.
         </p>
 
-        <h1>Mes parcours / My career paths</h1>
+      <h1>Mes parcours </h1>
       </div>
       <List data={list}/>
       <br/>
       <h1>Compétence front-end</h1>
-      <ListCompetence data={list}/>
+      <ListFrontEnd data={list}/>
+      <br/>
+      <h1>Compétence back-end</h1>
+      <ListBackEnd data={list}/>
     </div>
   );
 };
