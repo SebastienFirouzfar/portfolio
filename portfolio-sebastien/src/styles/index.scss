@@ -2,6 +2,9 @@
 @import "./navigation";
 @import "./footer";
 @import "./about";
+@import "./project";
+
+$margin10: 10px;
 
 .imgHome {
   margin: 10px;
@@ -19,4 +22,18 @@ p {
   font-size: 22px;
   margin: 70px;
   color: black;
+}
+
+
+h1{
+  font-family: 'Staatliches', cursive;
+}
+
+.row {
+  display: flex;
+  filter: drop-shadow(2px 4px 8px #585858);
+  grid-gap: 30px;
+  margin: $margin10;
+  position: relative;
+  margin-left: 9%;
 }
