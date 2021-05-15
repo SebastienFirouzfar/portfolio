@@ -81,8 +81,8 @@ const backEnd = [
 
 const project = [
     {
-        nameProject :'consolidation',
-        description : "Realisation de notre premier projet en groupe avec le langage html et css",
+        nameProject :'Consolidation',
+        description : "Realisation de notre premier projet en groupe avec le langage html et css, chacun de nous devais choisir une célébrité et rediger son historique",
         urlProject : "https://valerianderennebecode.github.io/consolidation-challenge/home/index.html", 
         urlGitHub : "https://github.com/valerianderennebecode/consolidation-challenge", 
         category : 2, 
@@ -99,7 +99,7 @@ const project = [
     }, 
 
     {
-        nameProject :'datavisualisation',
+        nameProject :'Data visualisation',
         description : "Dans cette exercice, nous devons réaliser avec la bibliothèque chart.js afin de comprendre le fonctionnement",
         urlProject: "https://sebastienfirouzfar.github.io/js-datavisualisation-challenge/",
         urlGitHub : "https://github.com/SebastienFirouzfar/js-datavisualisation-challenge", 
