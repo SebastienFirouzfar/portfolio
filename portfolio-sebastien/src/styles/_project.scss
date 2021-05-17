@@ -2,25 +2,24 @@ h3{
     text-align:center;
 }
 
-.container{
+.url{
+    display: flex;
     position: relative;
-    left: 2%;
+    left: 12%;
 }
-
-// .url{
-//     display: flex;
-//     position: relative;
-//     left: 18%;
-// }
 
 .paragrapheProject{
     margin: 10px auto auto ; 
 }
 
-#projectCard{
-    width: 55vh;
-    // position: relative;
-    // right:5% 
+// #projectCard{
+//     width: 75vh;
+//     position: relative;
+//     right:5% 
+// }
+
+.card{
+    width:18rem;
 }
 
 a{
