@@ -9,10 +9,10 @@ export const CardProject = (props) => {
         
         <img src={process.env.PUBLIC_URL + `./assets/${project.category}/${project.imageProject}`} 
           className="card-img-top" 
-          alt={project.imageProject } />   
+          alt={project.imageProject } /> 
        
         <p className="paragrapheProject">{project.description}</p>
-        <div className="url">
+        <div className="d-flex">
           <a href={project.urlProject}>Voir le projet</a>
           <a href={project.urlGitHub}>Voir la page github</a>
         </div>
@@ -29,7 +29,7 @@ export const ListProject = (props) =>{
       
       return (
           <div className="container">
-             <div className="d-flex justify-content-center row col-lg-12 col-md-6 col-xs col-sm" >
+             <div className="d-flex row col-lg-12 col-md-6 col-xs col-sm" >
                  {projects.map(project => <CardProject project={project} /> )}
             </div>
           </div>
