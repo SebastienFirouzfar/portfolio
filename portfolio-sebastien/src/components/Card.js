@@ -83,8 +83,8 @@ export const List = (props) =>{
     console.log(aboutInformation)
       
       return (
-          <div className="containerAbout">
-             <div className="row">
+          <div className="container">
+             <div className="row col-lg-12 col-md-6">
             {aboutInformation.map(infoAbout => <Card infoAbout={infoAbout} /> )}
             </div>
           </div>

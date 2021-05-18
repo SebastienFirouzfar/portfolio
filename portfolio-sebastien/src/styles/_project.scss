@@ -23,6 +23,17 @@ h3{
     width:18rem;
 }
 
-// a{
-//     text-align: center;
-// }
+a{
+    margin: $margin10;
+    padding:10px; 
+    text-decoration: none;
+    // position: relative;
+    // margin-left: 65%;
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+}
+
+:after {
+    color:black;
+    filter: drop-shadow(10px 10px 10px #0e0e0e);
+}

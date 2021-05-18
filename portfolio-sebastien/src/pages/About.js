@@ -31,7 +31,6 @@ export const About = () => {
           plus développer de nouvelles compétences et consolider mes compétences
           existantes.
         </p>
-
       <h1>Mes parcours </h1>
       </div>
       <List data={list}/>

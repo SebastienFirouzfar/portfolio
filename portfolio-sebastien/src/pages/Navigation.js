@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 export const Navigation = () => {
   return (
-    <div className="container">
+    <div className="container d-flex">
       <nav class="navbar navbar-expand-lg navbar-light ">
         <button
           class="navbar-toggler"
@@ -16,6 +16,7 @@ export const Navigation = () => {
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+        
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item active">

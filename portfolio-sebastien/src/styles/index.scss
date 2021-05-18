@@ -30,10 +30,14 @@ h1{
 }
 
 .row {
-  display: flex;
+  // display: flex;
   filter: drop-shadow(2px 4px 8px #585858);
   grid-gap: 30px;
   margin: $margin10;
   position: relative;
-  margin-left: 9%;
+  margin-left: 11%;
+}
+
+.card:hover{
+  transform: translate(10px, -10px);
 }
