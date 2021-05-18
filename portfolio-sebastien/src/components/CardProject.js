@@ -28,8 +28,8 @@ export const ListProject = (props) =>{
     console.log(projects)
       
       return (
-          <div className="container">
-             <div className="d-flex row col-lg-12 col-md-6 col-xs col-sm" >
+          <div className="container d-flex ">
+             <div className="row" >
                  {projects.map(project => <CardProject project={project} /> )}
             </div>
           </div>
