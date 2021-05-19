@@ -14,7 +14,7 @@ export const Card = (props) => {
             <div class="card-body">
               <h1 class="card-title">{infoAbout.nameSchool}</h1>
               <h5>Année :  {infoAbout.year}</h5>
-              <h5>Option : {infoAbout.options}</h5>
+              <h5>{infoAbout.options}</h5>
             </div>
           </div>
     ) 
