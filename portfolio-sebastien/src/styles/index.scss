@@ -31,11 +31,11 @@ h1{
 
 .row {
   // display: flex;
-  filter: drop-shadow(2px 4px 8px #585858);
+  filter: drop-shadow(2px 2px 2px);
   grid-gap: 30px;
   margin: $margin10;
   position: relative;
-  margin-left: 56px;
+  margin-left: 7%;
 }
 
 .container{
@@ -59,7 +59,7 @@ h1{
 }
 
 .card {
-  width:15rem;
+  width:20rem;
 }
 
 .card:hover{
