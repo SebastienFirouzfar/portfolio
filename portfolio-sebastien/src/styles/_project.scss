@@ -18,23 +18,28 @@ h3 {
 // //     right:5%
 // // }
 
-.overflow{
-    transform:scale(1);
-    overflow:hidden;
-    :hover{
-        transform:scale(1.1);
-        transition: 0.5s ease
-    }
+.overflow {
+  transform: scale(1);
+  overflow: hidden;
+  position: relative;
+  right: 10px;
+  :hover {
+    transform: scale(1.1);
+    transition: 0.5s ease;
+  }
 }
 
 a {
   margin: $margin10;
   padding: 10px;
   text-decoration: none;
-  // position: relative;
-  // margin-left: 65%;
   text-align: center;
   font-family: "Staatliches", cursive;
+}
+
+.urlGitHub{
+  position: relative;
+  left: 33px;
 }
 
 // :after {

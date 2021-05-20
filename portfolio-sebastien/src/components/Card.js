@@ -9,12 +9,13 @@ export const Card = (props) => {
         <div className="card">
          <a href={infoAbout.lien}>  <img src={process.env.PUBLIC_URL + `./assets/${infoAbout.image}`} 
             className="card-img-top" 
-            alt="Sebastien" />  </a> 
+            alt="Sebastien" />  
+          </a> 
            
             <div class="card-body">
               <h1 class="card-title">{infoAbout.nameSchool}</h1>
               <h5>Année :  {infoAbout.year}</h5>
-              <h5>{infoAbout.options}</h5>
+              <h6>Option : {infoAbout.options}</h6>
             </div>
           </div>
     ) 

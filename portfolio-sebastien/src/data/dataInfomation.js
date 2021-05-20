@@ -82,7 +82,7 @@ const backEnd = [
 const project = [
     {
         nameProject :'Consolidation',
-        description : "Realisation de notre premier projet en groupe avec le langage html et css, chacun de nous devais choisir une célébrité et rediger son historique",
+        description : "Realisation de notre premier projet en groupe avec le langage html et css, chacun de nous devais choisir une célébrité et rediger son historique. Cliquer sur l'image pour voir le résultat",
         urlProject : "https://valerianderennebecode.github.io/consolidation-challenge/home/index.html", 
         urlGitHub : "https://github.com/valerianderennebecode/consolidation-challenge", 
         category : 2, 
@@ -91,7 +91,7 @@ const project = [
 
     {
         nameProject:'Moosic',
-        description : "Moi et mes camarades de classe nous avons realisés un projet en utilisant le php, html, css, et le javascript ",
+        description : "Moi et mes camarades de classe nous avons realisés un projet en utilisant le php, html, css, et le javascript. Cliquer sur l'image pour voir le résultat ",
         urlProject : "http://moosic.great-site.net/?i=1", 
         urlGitHub : "https://github.com/SylvainDurant/Moosic",
         category : 2, 
@@ -100,7 +100,7 @@ const project = [
 
     {
         nameProject :'Data visualisation',
-        description : "Dans cette exercice, nous devons réaliser avec la bibliothèque chart.js afin de comprendre le fonctionnement",
+        description : "Dans cette exercice, nous devons réaliser avec la bibliothèque chart.js afin de comprendre le fonctionnement. Cliquer sur l'image pour voir le résultat",
         urlProject: "https://sebastienfirouzfar.github.io/js-datavisualisation-challenge/",
         urlGitHub : "https://github.com/SebastienFirouzfar/js-datavisualisation-challenge", 
         category : 2, 
@@ -109,7 +109,7 @@ const project = [
 
     {
         nameProject :'E-commerce react',
-        description : "Ce projet se base sur un tutoriel de react du site udemy. Ce projet à pout but de comprendre le framework de javascript ",
+        description : "Ce projet se base sur un tutoriel de react du site udemy. Ce projet à pout but de comprendre le framework de javascript. Cliquer sur l'image pour voir le résultat ",
         urlProject: "https://webreacteshop.web.app/", 
         urlGitHub : "https://github.com/SebastienFirouzfar/e-commernce-react",
         category : 2, 
@@ -118,7 +118,7 @@ const project = [
 
     {
         nameProject :'TodoList',
-        description :"Le but de cette exercice est d'apprendre les petites base en node js afin de comprendre le fonctionnement de ce framework. Voici le résultat avec le node js" ,
+        description :"Le but de cette exercice est d'apprendre les petites base en node js afin de comprendre le fonctionnement de ce framework. Voici le résultat avec le node js. Cliquer sur l'image pour voir le résultat" ,
         urlProject: "https://todo-list-tuto-diogo.herokuapp.com/", 
         urlGitHub : "https://github.com/SebastienFirouzfar/nodejs", 
         category : 2, 
@@ -127,7 +127,7 @@ const project = [
 
     {
         nameProject :'E-commerce node js ',
-        description : "Realisation de notre premier projet en node js pour mettre en fonctionner tel que le register, login, logout, news letters et research avec la base de donnée mongooDB ",
+        description : "Realisation de notre premier projet en node js pour mettre en fonctionner tel que le register, login, logout, news letters et research avec la base de donnée mongooDB. Cliquer sur l'image pour voir le résultat  ",
         urlProject: "https://e-shop-challenge.herokuapp.com/", 
         urlGitHub : "https://github.com/SebastienFirouzfar/eShop-challenge", 
         category : 2, 

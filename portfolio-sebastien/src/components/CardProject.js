@@ -8,17 +8,17 @@ export const CardProject = (props) => {
       <h4>{project.nameProject} </h4>
 
       <div className="overflow">
-        <img
-          src={ process.env.PUBLIC_URL +`./assets/${project.category}/${project.imageProject}`}
-          className="card-img-top"
-          alt={project.imageProject}
-        />
+        <a href={project.urlProject}>
+          <img src={process.env.PUBLIC_URL +`./assets/${project.category}/${project.imageProject}`}
+            className="card-img-top"
+            alt={project.imageProject}
+          />
+        </a>
       </div>
 
       <p className="paragrapheProject">{project.description}</p>
       <div className="d-flex">
-        <a href={project.urlProject}>Voir le projet</a>
-        <a href={project.urlGitHub}>Voir la page github</a>
+        <a className="urlGitHub" href={project.urlGitHub}>Voir la page github</a>
       </div>
     </div>
   );
