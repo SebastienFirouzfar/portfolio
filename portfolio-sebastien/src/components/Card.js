@@ -54,7 +54,7 @@ export const ListFrontEnd = (props) =>{
   console.log(aboutCompetence)
   
   return (
-      <div className="container d-flex">
+      <div className="container">
          <div className="row">
         {aboutCompetence.map(infoCompetence => <CardFrontEnd infoCompetence={infoCompetence} /> )}
         </div>
@@ -69,7 +69,7 @@ export const ListBackEnd = (props) =>{
   console.log(aboutCompetence)
   
   return (
-      <div className="container d-flex">
+      <div className="container">
          <div className="row">
         {aboutCompetence.map(infoCompetence => <CardBackEnd infoCompetence={infoCompetence} /> )}
         </div>
@@ -84,7 +84,7 @@ export const List = (props) =>{
     console.log(aboutInformation)
       
       return (
-          <div className="container d-flex">
+          <div className="container">
              <div className="row">
             {aboutInformation.map(infoAbout => <Card infoAbout={infoAbout} /> )}
             </div>

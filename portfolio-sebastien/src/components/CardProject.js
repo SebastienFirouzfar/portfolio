@@ -30,8 +30,8 @@ export const ListProject = (props) => {
   console.log(projects);
 
   return (
-    <div className="container d-flex ">
-      <div className="row ">
+    <div className="container">
+      <div className="row">
         {projects.map((project) => (
           <CardProject project={project} />
         ))}
