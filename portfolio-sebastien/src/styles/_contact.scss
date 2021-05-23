@@ -1,4 +1,18 @@
 .form-control{
-    margin-right: 50%;
+    margin-right: 9%;
+    resize : none ;
 }
 
+
+.containerContact{
+    display: flex; 
+    // position: relative;
+    // left: 8px;
+    margin: 0px 23% 0%;
+  
+      :after {
+          color:black;
+          filter: drop-shadow(10px 10px 10px #0e0e0e);
+      }
+  
+}

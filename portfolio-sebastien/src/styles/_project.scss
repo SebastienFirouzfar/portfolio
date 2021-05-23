@@ -1,7 +1,29 @@
+$margin10: 10px;
+
 h3 {
   text-align: center;
 }
 
+.containerProject{
+  display: flex; 
+  position: relative;
+  // left: 8px;
+  margin: 25px 25px;
+    a{
+        margin: $margin10;
+        text-decoration: none;
+        // position: relative;
+        // margin-left: 65%;
+        text-align: center;
+        font-family: 'Staatliches', cursive;
+    }
+
+    :after {
+        color:black;
+        filter: drop-shadow(10px 10px 10px #0e0e0e);
+    }
+
+}
 
 .paragrapheProject {
   margin: 10px auto auto;

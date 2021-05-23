@@ -6,7 +6,7 @@ export const Footer = () => {
     return (
         <div className="containerFooter">
             <div className="row col-xs col-sm col-md col-lg">
-                <div className="col-lg-6 col-md-3 d-flex">
+                <div className="col-xs col-sm col-md col-lg">
                      <a  href="https://github.com/SebastienFirouzfar"> <FaGithub size="2em"/> </a>
                      <a  href="https://www.facebook.com/sebastien.firouz/"><FaFacebook size="2em"/> </a> 
                      <a  href="https://www.instagram.com/aidin_firouzfar/"><FaInstagram size="2em"/></a> 
