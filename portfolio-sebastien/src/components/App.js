@@ -7,13 +7,16 @@ import { Contact } from '../pages/Contact'
 import { About } from '../pages/About'
 import { NotFound } from "../pages/NotFound"
 import { Projects } from "../pages/Projects"
-import { Home } from "../pages/Home";
+import { Home } from "../pages/Home"
 import { Footer } from "./Footer"
+
+import UserProfileContextProvider from '../lib/UserProfileContext'
 
 function App() {
   return (
     <Fragment>
         <BrowserRouter>
+        <UserProfileContextProvider>
       {/*Switch permet de vérifié que la page existe sinon elle envoie une page d'erreur 404 */}
         <Switch>      
           {/*Qui conrespond au components (composant) de la page Home*/ }
@@ -23,6 +26,7 @@ function App() {
           <Route path="/Contact" exact component={Contact}/>
           <Route component={NotFound}/>
         </Switch>
+        </UserProfileContextProvider>
       </BrowserRouter>
       <Footer/>
     </Fragment>

@@ -1,20 +1,53 @@
-import React, {useState} from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { Navigation } from "./Navigation";
-import validator from 'validator'
+import { UserProfileContext } from "../lib/UserProfileContext";
+import validator from "validator";
+import { Link } from 'react-router-dom'
 
 export const Contact = () => {
-  
-  const [emailError, setEmailError] = useState('')
+  const [isValid, setValid] = useState(false);
+  const value = useContext(UserProfileContext);
+  const {
+    firstName,
+    lastName,
+    company,
+    email,
+    message,
+    setUserProfileContext
+  } = value;
+
+  const validate = () => {
+    let errors = [];
+    //récuperer tout les inputs
+    const inputs = document.querySelectorAll(".form-control");
+
+    inputs.forEach((input) => {
+      // s'il n'y pas de valeur, le programme doit contenir tout les inputs qui ne sont pas valide
+      !input.value ? errors.push(input) : errors.length && errors.pop();
+    });
+
+    //s'il ya aucune erreur
+    console.log(errors);
+    setValid(!errors.length);
+  };
+
+  useEffect(() => {
+    validate();
+  });
+
+
+
+  const [emailError, setEmailError] = useState("");
   const validateEmail = (e) => {
-    var email = e.target.value
-  
+    var email = e.target.value;
+
     if (validator.isEmail(email)) {
-      setEmailError('Valid Email :)')
+      setEmailError("Valid Email :)");
     } else {
-      setEmailError('Enter valid Email!')
+      setEmailError("Enter valid Email!");
     }
-  }
-  
+  };
+
   return (
     <div>
       <Navigation />
@@ -23,66 +56,97 @@ export const Contact = () => {
       <div className="containerContact">
         <div className="row col-xs col-sm col-md col-lg">
           <form id="contactBlock">
-            
             <label htmlFor="first name">
-            <h4 className="title">First name </h4>
+              <h4 className="title">First name </h4>
             </label>
 
             <div className="input-group mb-3 col-xs col-sm col-md col-lg">
               <input
                 type="text"
-                className="form-control"
+                class="form-control"
+                placeholder="firstName"
+                name="firstName"
                 aria-label="form-control-sm"
+                defaultValue={firstName}
                 aria-describedby="inputGroup-sizing-default"
+                onChange={(e) => {
+                  setUserProfileContext({ [e.target.name]: e.target.value });
+                }}
               />
             </div>
-            
+
             <label htmlFor="last name">
-            <h4 className="title">Last name </h4>
+              <h4 className="title">Last name </h4>
             </label>
             <div className="input-group mb-3 col-xs col-sm col-md col-lg">
-              
               <input
                 type="text"
-                className="form-control"
+                class="form-control"
+                placeholder="lastName"
+                name="lastName"
+                defaultValue={lastName}
                 aria-label="form-control-sm"
                 aria-describedby="inputGroup-sizing-default"
+                onChange={(e) => {
+                  setUserProfileContext({[e.target.name]: e.target.value });
+                }}
               />
             </div>
 
             <label htmlFor="company">
-            <h4 className="title">Company name</h4>
+              <h4 className="title">Company name</h4>
             </label>
 
             <div className="input-group mb-3 col-xs col-sm col-md col-lg">
-              
               <input
                 type="text"
-                className="form-control"
+                placeholder="company"
+                name="company"
+                defaultValue={company}
+                class="form-control"
+                onChange={(e) => {
+                  setUserProfileContext({[e.target.name]: e.target.value }, e => { 
+                    setUserProfileContext({[e.target.name]: e.target.value})
+                });
+                }}
               />
             </div>
 
             <label htmlFor="email">
-            <h4 className="title">Email address </h4>
+              <h4 className="title">Email address </h4>
             </label>
             <div className="input-group mb-3 col-xs col-sm col-md col-lg">
-      
               <input
                 type="text"
-                className="form-control"
-                onChange={(e) => validateEmail(e)}
+                placeholder="email"
+                name="email"
+                defaultValue={email}
+                class="form-control"
+                onChange={((e) => validateEmail(e))}
               />
             </div>
 
             <label htmlFor="message">
-            <h4 className="title">Message </h4>
+              <h4 className="title">Message </h4>
             </label>
             <div className="input-group  mb-3 col-xs col-sm col-md col-lg">
-              <textarea  className="form-control" aria-label="With textarea"></textarea>
+              <textarea
+                class="form-control"
+                aria-label="With textarea"
+                placeholder="message"
+                defaultValue={message}
+                name="message"
+                onChange={e => { 
+                  setUserProfileContext({[e.target.name]: e.target.value})
+              }}
+              ></textarea>
             </div>
             <h3>{emailError}</h3>
-            <button type="button" className="btn btn-primary">Send</button>
-
+            
+            <Link to="/contact"
+              className={`${!isValid && 'disabled'} btn btn-primary checkout`}>
+              Send message
+            </Link>
           </form>
         </div>
       </div>
