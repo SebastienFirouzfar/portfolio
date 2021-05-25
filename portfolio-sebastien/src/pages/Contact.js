@@ -38,13 +38,17 @@ export const Contact = () => {
 
 
   const [emailError, setEmailError] = useState("");
+  const [emailValid, setEmailValid] = useState(false)
   const validateEmail = (e) => {
     var email = e.target.value;
 
+
     if (validator.isEmail(email)) {
       setEmailError("Valid Email :)");
+      setEmailValid(true)
     } else {
       setEmailError("Enter valid Email!");
+      setEmailValid(false)
     }
   };
 
@@ -105,10 +109,7 @@ export const Contact = () => {
                 defaultValue={company}
                 class="form-control"
                 onChange={(e) => {
-                  setUserProfileContext({[e.target.name]: e.target.value }, e => { 
-                    setUserProfileContext({[e.target.name]: e.target.value})
-                });
-                }}
+                  setUserProfileContext({[e.target.name]: e.target.value })}}
               />
             </div>
 
@@ -143,10 +144,9 @@ export const Contact = () => {
             </div>
             <h3>{emailError}</h3>
             
-            <Link to="/contact"
-              className={`${!isValid && 'disabled'} btn btn-primary checkout`}>
+           {emailValid ? <Link to="/contact"className={`${!isValid && 'disabled'} btn btn-primary checkout`}>
               Send message
-            </Link>
+            </Link> : <p>'the email address must be valid' </p>} 
           </form>
         </div>
       </div>
