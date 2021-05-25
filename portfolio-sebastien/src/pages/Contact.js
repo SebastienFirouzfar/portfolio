@@ -146,7 +146,7 @@ export const Contact = () => {
             
            {emailValid ? <Link to="/contact"className={`${!isValid && 'disabled'} btn btn-primary checkout`}>
               Send message
-            </Link> : <p>'the email address must be valid' </p>} 
+            </Link> : <p>'fill in the fields of the form and the email address must be valid to have the button' </p>} 
           </form>
         </div>
       </div>
