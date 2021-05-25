@@ -2,7 +2,8 @@ import React, { useState, useEffect, useContext } from "react";
 import { Navigation } from "./Navigation";
 import { UserProfileContext } from "../lib/UserProfileContext";
 import validator from "validator";
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'; 
+import emailjs from 'emailjs-com';
 
 export const Contact = () => {
   const [isValid, setValid] = useState(false);
@@ -52,6 +53,24 @@ export const Contact = () => {
     }
   };
 
+
+  // const [messageValid, setMessageValid] = useState("")
+
+  // const handle = (e) => {
+  //   setMessageValid("Merci d'avoir envoyer ce message ")
+  // }
+
+  const sendEmail = (e) =>{
+    e.preventDefault(); 
+
+    emailjs.sendForm('gmail', 'template_pnhy69l', e.target, 'user_HuKqlk3QYteJHDRgFB4El')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  }
+
   return (
     <div>
       <Navigation />
@@ -59,7 +78,7 @@ export const Contact = () => {
 
       <div className="containerContact">
         <div className="row col-xs col-sm col-md col-lg">
-          <form id="contactBlock">
+          <form onSubmit={sendEmail} >
             <label htmlFor="first name">
               <h4 className="title">First name </h4>
             </label>
@@ -144,9 +163,17 @@ export const Contact = () => {
             </div>
             <h3>{emailError}</h3>
             
-           {emailValid ? <Link to="/contact"className={`${!isValid && 'disabled'} btn btn-primary checkout`}>
+           {/* {emailValid ? <Link to="/contact"  className={`${!isValid && 'disabled'} btn btn-primary checkout`} >
               Send message
-            </Link> : <p>'fill in the fields of the form and the email address must be valid to have the button' </p>} 
+            </Link> : <p>'fill in the fields of the form and the email address must be valid to have the button' </p>}  */}
+            
+            {emailValid ? 
+            <button
+                type="submit"
+                placeholder="email"
+                className={`${!isValid && 'disabled'} btn btn-primary checkout`}
+              >Sens message</button>
+              : <p>'fill in the fields of the form and the email address must be valid to have the button' </p>} 
           </form>
         </div>
       </div>
