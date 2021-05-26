@@ -63,12 +63,15 @@ export const Contact = () => {
   const sendEmail = (e) =>{
     e.preventDefault(); 
 
-    emailjs.sendForm('gmail', 'template_pnhy69l', e.target, 'user_HuKqlk3QYteJHDRgFB4El')
+    emailjs.sendForm('service_jta0j6q', 'template_3neo3f6', e.target, 'user_HuKqlk3QYteJHDRgFB4El')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
           console.log(error.text);
       });
+
+      //clears the form after sending the email
+      e.target.reset()
   }
 
   return (
