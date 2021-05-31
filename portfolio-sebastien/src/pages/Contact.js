@@ -5,6 +5,9 @@ import validator from "validator";
 // import { Link } from 'react-router-dom'; 
 import emailjs from 'emailjs-com';
 
+import {animationThree} from "../animation/index"
+import {motion} from 'framer-motion'
+
 export const Contact = () => {
   const [isValid, setValid] = useState(false);
   const value = useContext(UserProfileContext);
@@ -75,6 +78,14 @@ export const Contact = () => {
   }
 
   return (
+
+    <motion.div initial="out"
+    animate="end" 
+    exit="out" 
+    variants={animationThree}
+    >
+
+
     <div>
       <Navigation />
       <h1>Contact</h1>
@@ -181,5 +192,6 @@ export const Contact = () => {
         </div>
       </div>
     </div>
+    </motion.div>
   );
 };

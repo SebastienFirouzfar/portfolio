@@ -3,6 +3,10 @@ import "bootstrap/dist/css/bootstrap.css";
 //router, si on met pas le react-router-dom on appel tt react 
 import {BrowserRouter, Switch, Route} from 'react-router-dom'
 
+//framer-motion
+import {AnimatePresence} from "framer-motion"
+
+//pages
 import { Contact } from '../pages/Contact'
 import { About } from '../pages/About'
 import { NotFound } from "../pages/NotFound"
@@ -17,6 +21,7 @@ function App() {
     <Fragment>
         <BrowserRouter>
         <UserProfileContextProvider>
+        <AnimatePresence>
       {/*Switch permet de vérifié que la page existe sinon elle envoie une page d'erreur 404 */}
         <Switch>      
           {/*Qui conrespond au components (composant) de la page Home*/ }
@@ -26,6 +31,7 @@ function App() {
           <Route path="/Contact" exact component={Contact}/>
           <Route component={NotFound}/>
         </Switch>
+        </AnimatePresence>
         </UserProfileContextProvider>
       </BrowserRouter>
       <Footer/>

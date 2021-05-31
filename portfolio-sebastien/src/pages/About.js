@@ -6,8 +6,19 @@ import { List, ListFrontEnd, ListBackEnd } from '../components/Card'
 //data
 import { list } from '../data/dataInfomation'
 
+import {animationThree} from "../animation/index"
+import {motion} from 'framer-motion'
+
 export const About = () => {
   return (
+
+    <motion.div initial="out"
+    animate="in" 
+    exit="out" 
+    variants={animationThree}
+    >
+      
+
     <div className="container" class="col-lg-12 col-md-12">
       <Navigation />
       <h1>About</h1>
@@ -41,7 +52,9 @@ export const About = () => {
       <h1>Compétence back-end</h1>
       <ListBackEnd data={list}/>
     </div>
+    </motion.div>
   );
+  
 };
 
 
