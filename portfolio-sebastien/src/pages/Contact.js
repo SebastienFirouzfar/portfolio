@@ -5,7 +5,7 @@ import validator from "validator";
 // import { Link } from 'react-router-dom'; 
 import emailjs from 'emailjs-com';
 
-import {animationThree} from "../animation/index"
+import {animationOne, transition} from "../animation/index"
 import {motion} from 'framer-motion'
 
 export const Contact = () => {
@@ -80,10 +80,10 @@ export const Contact = () => {
   return (
 
     <motion.div initial="out"
-    animate="end" 
+    animate="in" 
     exit="out" 
-    variants={animationThree}
-    >
+    variants={animationOne}
+    transition={transition}>
 
 
     <div>

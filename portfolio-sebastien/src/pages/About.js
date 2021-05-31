@@ -6,7 +6,7 @@ import { List, ListFrontEnd, ListBackEnd } from '../components/Card'
 //data
 import { list } from '../data/dataInfomation'
 
-import {animationThree} from "../animation/index"
+import {animationOne, transition} from "../animation/index"
 import {motion} from 'framer-motion'
 
 export const About = () => {
@@ -15,8 +15,8 @@ export const About = () => {
     <motion.div initial="out"
     animate="in" 
     exit="out" 
-    variants={animationThree}
-    >
+    variants={animationOne}
+    transition={transition}>
       
 
     <div className="container" class="col-lg-12 col-md-12">
