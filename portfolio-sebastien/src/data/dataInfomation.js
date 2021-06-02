@@ -32,52 +32,58 @@ const aboutInformation = [
      }
 ]; 
 
-const frontEnd = [
+const competence = [
     {
+        nameLanguage :'HTML',
         imageLanguage : "html.jpg",
         category : 1
     }, 
 
     {
+        nameLanguage :'CSS',
         imageLanguage : "css.jpg",
         category : 1
     }, 
 
     {
+        nameLanguage :'BOOTSTRAP',
         imageLanguage : "bootstrap.jpg", 
         category : 1
     }, 
 
     {
+        nameLanguage :'JAVASCRIPT',
         imageLanguage : "javascript.jpg", 
         category : 1
     }, 
 
     {
+        nameLanguage :'REACT',
         imageLanguage : "react.jpg", 
         category : 1
     }, 
 
-       {
+    {
+        nameLanguage :'SASS',
         imageLanguage : "sass.jpg", 
         category : 1
-    }
+    }, 
 
-]; 
-
-const backEnd = [
     {
         nameLanguage :'NODE JS',
         imageLanguage : "nodejsExpress.jpg", 
-        category : 0
+        category : 1
     }, 
 
     {
         nameLanguage :'PHP',
         imageLanguage : "php.jpg", 
-        category : 0
+        category : 1
     }
-];
+
+]; 
+
+
 
 const project = [
     {
@@ -137,4 +143,4 @@ const project = [
 
 //exporter la liste dans index.js de notre app  https://todo-list-tuto-diogo.herokuapp.com/
 //egalement de mettre la liste dans index de components
-export const list = [aboutInformation, frontEnd, backEnd, project]
+export const list = [aboutInformation, competence, project]

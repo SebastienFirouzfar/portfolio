@@ -1,7 +1,7 @@
 import React from "react";
 import { Navigation } from "../pages/Navigation";
 
-import { List, ListFrontEnd, ListBackEnd } from '../components/Card'
+import { List, ListComptetence} from '../components/Card'
 
 //data
 import { list } from '../data/dataInfomation'
@@ -46,11 +46,9 @@ export const About = () => {
       </div>
       <List data={list}/>
       <br/>
-      <h1>Compétence front-end</h1>
-      <ListFrontEnd data={list}/>
+      <h1>Compétences</h1>
+      <ListComptetence data={list}/>
       <br/>
-      <h1>Compétence back-end</h1>
-      <ListBackEnd data={list}/>
     </div>
     </motion.div>
   );

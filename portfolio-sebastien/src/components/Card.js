@@ -22,7 +22,7 @@ export const Card = (props) => {
 }
 
 
-export const CardFrontEnd = (props) => {
+export const CardCompetence = (props) => {
   const {infoCompetence} = props;
 
   return (
@@ -34,50 +34,9 @@ export const CardFrontEnd = (props) => {
   )
 }
 
-export const CardBackEnd = (props) => {
-  const {infoCompetence} = props;
-
-  return (
-      <div className="card">
-       <img src={process.env.PUBLIC_URL + `./assets/${infoCompetence.category}/${infoCompetence.imageLanguage}`} 
-          className="card-img-top" 
-          alt={infoCompetence.nameLanguage} />  
-      </div>
-  )
-}
 
 
 //LIST
-export const ListFrontEnd = (props) =>{
-  const {data} = props;
-  const aboutCompetence = data[1]
-  console.log(aboutCompetence)
-  
-  return (
-      <div className="containerAbout">
-         <div className="row">
-        {aboutCompetence.map(infoCompetence => <CardFrontEnd infoCompetence={infoCompetence} /> )}
-        </div>
-      </div>
-  )
-}
-
-
-export const ListBackEnd = (props) =>{
-  const {data} = props;
-  const aboutCompetence = data[2]
-  console.log(aboutCompetence)
-  
-  return (
-      <div className="containerAbout">
-         <div className="row">
-        {aboutCompetence.map(infoCompetence => <CardBackEnd infoCompetence={infoCompetence} /> )}
-        </div>
-      </div>
-  )
-}
-
-
 export const List = (props) =>{
     const {data} = props;
     const aboutInformation = data[0]
@@ -90,4 +49,18 @@ export const List = (props) =>{
             </div>
           </div>
       )
+}
+
+export const ListComptetence = (props) =>{
+  const {data} = props;
+  const aboutCompetence = data[1]
+  console.log(aboutCompetence)
+  
+  return (
+      <div className="containerAbout">
+         <div className="row">
+        {aboutCompetence.map(infoCompetence => <CardCompetence infoCompetence={infoCompetence} /> )}
+        </div>
+      </div>
+  )
 }

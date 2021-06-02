@@ -26,7 +26,7 @@ export const CardProject = (props) => {
 
 export const ListProject = (props) => {
   const { data } = props;
-  const projects = data[3];
+  const projects = data[2];
   console.log(projects);
 
   return (

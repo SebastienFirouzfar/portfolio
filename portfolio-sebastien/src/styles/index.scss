@@ -8,7 +8,7 @@
 $margin10: 10px;
 
 body{
-  background-image: linear-gradient(to top, #716d6d, #928f90, #b5b3b4, #d9d9d9, #ffffff);
+  background-color:#9c9c9c;
 }
 
 #imgHome {
@@ -32,6 +32,7 @@ p {
 
 h1{
   font-family: 'Staatliches', cursive;
+  text-shadow: 1px 2px 1px #f0e8e8;
 }
 
 .row {
@@ -52,9 +53,7 @@ h1{
   transition: 0.5s ease
 }
 
-h1{
-  text-shadow: 2px 2px 2px #858080;
-}
+
 
 
 @media (max-width: 400px){
