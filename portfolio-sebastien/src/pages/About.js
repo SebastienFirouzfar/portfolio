@@ -3,6 +3,7 @@ import { Navigation } from "../pages/Navigation";
 
 import { List, ListComptetence} from '../components/Card'
 
+
 //data
 import { list } from '../data/dataInfomation'
 
@@ -42,6 +43,7 @@ export const About = () => {
           plus développer de nouvelles compétences et consolider mes compétences
           existantes.
         </p>
+        
       <h1>Mes parcours </h1>
       </div>
       <List data={list}/>

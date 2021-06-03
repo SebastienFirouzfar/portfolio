@@ -31,10 +31,15 @@ export const Navigation = () => {
               <NavLink exact to="/projects" activeClassName="nav-active">Projects</NavLink>
             </li>
 
-            <li class="nav-item">
-              <li><NavLink exact to="/contact" activeClassName="nav-active">Contact</NavLink>
+           <li class="nav-item">
+              <NavLink exact to="/contact" activeClassName="nav-active">Contact</NavLink>
             </li>
             
+            <li class="nav-item">
+              <li> <a href="../../public/assets/cv/Firouzfar-Sebastien-CV-Dev-Web.pdf" 
+              download="Firouzfar-Sebastien-CV-Dev-Web.pdf">Download my cv</a>
+            </li>
+          
             </li>
           </ul>
         </div>

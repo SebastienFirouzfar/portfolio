@@ -7,7 +7,7 @@ $textCenter: center;
   margin: 10px;
 
   .row {
-    margin-left: 35%;
+    margin-left: 3%;
   }
 
   a {
@@ -15,10 +15,13 @@ $textCenter: center;
     text-decoration: none;
   }
 
-  a:hover {
-    filter: drop-shadow(2px 4px 8px #5348e7);
-  }
+  .facebook{
+    color: hsl(214, 100%, 59%);
+   }
 
+   .instagram{
+     color: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D)
+   }
 }
 
 h4 {
