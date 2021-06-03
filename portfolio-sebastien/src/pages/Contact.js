@@ -186,7 +186,7 @@ export const Contact = () => {
                 type="submit"
                 placeholder="email"
                 className={`${!isValid && 'disabled'} btn btn-primary checkout`}
-              >Sens message</button>
+              >Send message</button>
               : <p>'fill in the fields of the form and the email address must be valid to have the button' </p>} 
           </form>
         </div>
