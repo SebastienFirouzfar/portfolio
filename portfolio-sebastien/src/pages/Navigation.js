@@ -36,8 +36,8 @@ export const Navigation = () => {
             </li>
             
             <li class="nav-item">
-              <li> <a href="../../public/assets/cv/Firouzfar-Sebastien-CV-Dev-Web.pdf" 
-              download="Firouzfar-Sebastien-CV-Dev-Web.pdf">Download my cv</a>
+              <li> <a href="./media/Firouzfar-Sebastien-CV-Dev-Web.pdf" 
+              >Download my cv</a>
             </li>
           
             </li>
