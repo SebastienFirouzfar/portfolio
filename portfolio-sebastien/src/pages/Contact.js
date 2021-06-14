@@ -42,7 +42,7 @@ export const Contact = () => {
 
 
   const [emailError, setEmailError] = useState("");
-  const [emailValid, setEmailValid] = useState(false)
+  const [emailValid, setEmailValid] = useState()
   const validateEmail = (e) => {
     var email = e.target.value;
 
@@ -57,11 +57,6 @@ export const Contact = () => {
   };
 
 
-  // const [messageValid, setMessageValid] = useState("")
-
-  // const handle = (e) => {
-  //   setMessageValid("Merci d'avoir envoyer ce message ")
-  // }
 
   const sendEmail = (e) =>{
     e.preventDefault(); 

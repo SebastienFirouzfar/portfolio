@@ -26,7 +26,7 @@ export const CardCompetence = (props) => {
   const {infoCompetence} = props;
 
   return (
-      <div className="card">
+      <div className="card" id='cardCompetence'>
        <img src={process.env.PUBLIC_URL + `./assets/${infoCompetence.category}/${infoCompetence.imageLanguage}`} 
           className="card-img-top" 
           alt={infoCompetence.nameLanguage}  />  

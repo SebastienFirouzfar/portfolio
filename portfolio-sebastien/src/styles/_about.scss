@@ -33,6 +33,10 @@ $margin10: 10px;
   filter: drop-shadow(2px 4px 8px #585858);
 }
 
+#cardCompetence{
+  width: 15rem;
+}
+
 
 p {
   margin: $margin10;
@@ -48,5 +52,6 @@ h1 {
   .row {
     position: relative;
     margin-left: 10%;
+    grid-gap: 30px;
   }
 }
