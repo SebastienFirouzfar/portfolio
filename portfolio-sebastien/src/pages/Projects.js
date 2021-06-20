@@ -8,6 +8,8 @@ import { list } from "../data/dataInfomation";
 import { animationOne, transition } from "../animation/index";
 import { motion } from "framer-motion";
 
+import Slide from "react-reveal/Fade";
+
 export const Projects = () => {
   return (
     <motion.div
@@ -20,7 +22,9 @@ export const Projects = () => {
       <div>
         <Navigation />
         <h1>Projects</h1>
-        <ListProject data={list} />
+        <Slide bottom>
+          <ListProject data={list} />
+        </Slide>
       </div>
     </motion.div>
   );
