@@ -12,7 +12,7 @@ import { About } from '../pages/About'
 import { NotFound } from "../pages/NotFound"
 import { Projects } from "../pages/Projects"
 import { Home } from "../pages/Home"
-import { Footer } from "./Footer"
+// import { Footer } from "./Footer"
 
 import UserProfileContextProvider from '../lib/UserProfileContext'
 
@@ -34,7 +34,7 @@ function App() {
         </AnimatePresence>
         </UserProfileContextProvider>
       </BrowserRouter>
-      <Footer/>
+      {/* <Footer/> */}
     </Fragment>
   );
 }

@@ -6,7 +6,7 @@ export const Card = (props) => {
     const {infoAbout} = props;
   
     return (
-        <div className="card">
+        <div className="card" id="card-about">
          <a href={infoAbout.lien}>  <img src={process.env.PUBLIC_URL + `./assets/${infoAbout.image}`} 
             className="card-img-top" 
             alt="Sebastien" />  
@@ -57,7 +57,7 @@ export const ListComptetence = (props) =>{
   console.log(aboutCompetence)
   
   return (
-      <div className="containerAbout">
+      <div className="containerAbout" id='listCompetence'>
          <div className="row">
         {aboutCompetence.map(infoCompetence => <CardCompetence infoCompetence={infoCompetence} /> )}
         </div>

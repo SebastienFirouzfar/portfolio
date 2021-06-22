@@ -79,6 +79,24 @@ const competence = [
         nameLanguage :'PHP',
         imageLanguage : "php.jpg", 
         category : 1
+    }, 
+
+    {
+        nameLanguage :'HEROKU',
+        imageLanguage : "heroku.jpg", 
+        category : 1
+    }, 
+
+    {
+        nameLanguage :'GIT',
+        imageLanguage : "git.jpg", 
+        category : 1
+    }, 
+
+    {
+        nameLanguage :'GIT-HUB',
+        imageLanguage : "GitHub-logo.jpg", 
+        category : 1
     }
 
 ]; 

@@ -20,10 +20,10 @@ export const About = () => {
       variants={animationOne}
       transition={transition}
     >
-      <div className="container" class="col-lg-12 col-md-12">
+      <div className="col-lg-12 col-md-12">
         <Navigation />
         <h1>About</h1>
-        <div class="col-lg-12 col-md-12">
+        <div className="col-lg-12 col-md-12">
           <img
             className="imgPresentation"
             src="./assets/IMG_24822.jpg"
