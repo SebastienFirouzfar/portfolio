@@ -33,7 +33,7 @@ export const ListProject = (props) => {
     <div className="containerProject">
       <div className="row">
         {projects.map((project) => (
-          <CardProject project={project} />
+          <CardProject key={project.category}  project={project} />
         ))}
       </div>
     </div>

@@ -12,6 +12,7 @@ import { motion } from "framer-motion";
 import Fade from "react-reveal/Fade";
 
 export const About = () => {
+  
   return (
     <motion.div
       initial="out"
@@ -49,12 +50,12 @@ export const About = () => {
         <Fade left>
           <List data={list} />
         </Fade>
-        <br />
+        
         <h1>Compétences</h1>
         <Fade right>
           <ListComptetence data={list} />
         </Fade>
-        <br />
+        
       </div>
     </motion.div>
   );

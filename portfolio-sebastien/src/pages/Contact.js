@@ -95,7 +95,7 @@ export const Contact = () => {
             <div className="input-group mb-3 col-xs col-sm col-md col-lg">
               <input
                 type="text"
-                class="form-control"
+                className="form-control"
                 placeholder="firstName"
                 name="firstName"
                 aria-label="form-control-sm"
@@ -113,7 +113,7 @@ export const Contact = () => {
             <div className="input-group mb-3 col-xs col-sm col-md col-lg">
               <input
                 type="text"
-                class="form-control"
+                className="form-control"
                 placeholder="lastName"
                 name="lastName"
                 defaultValue={lastName}
@@ -150,7 +150,7 @@ export const Contact = () => {
                 placeholder="email"
                 name="email"
                 defaultValue={email}
-                class="form-control"
+                className="form-control"
                 onChange={((e) => validateEmail(e))}
               />
             </div>
@@ -160,7 +160,7 @@ export const Contact = () => {
             </label>
             <div className="input-group  mb-3 col-xs col-sm col-md col-lg">
               <textarea
-                class="form-control"
+                className="form-control"
                 aria-label="With textarea"
                 placeholder="message"
                 defaultValue={message}
