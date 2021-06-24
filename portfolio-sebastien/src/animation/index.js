@@ -8,3 +8,7 @@ export const animationOne = {
 export const transition = {
   duration: 0.4,
 };
+
+export const transitionTitle = {
+  duration: 3.0,
+}
