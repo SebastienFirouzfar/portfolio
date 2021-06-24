@@ -45,7 +45,7 @@ export const List = (props) =>{
       return (
           <div className="containerAbout">
              <div className="row">
-            {aboutInformation.map(infoAbout => <Card key={infoAbout.category}  infoAbout={infoAbout} /> )}
+            {aboutInformation.map(infoAbout => <Card key={infoAbout.refAbout}  infoAbout={infoAbout} /> )}
             </div>
           </div>
       )
@@ -59,7 +59,7 @@ export const ListComptetence = (props) =>{
   return (
       <div className="containerAbout" id='listCompetence'>
          <div className="row">
-        {aboutCompetence.map(infoCompetence => <CardCompetence key={infoCompetence.category}  infoCompetence={infoCompetence} /> )}
+        {aboutCompetence.map(infoCompetence => <CardCompetence key={infoCompetence.refCompetence}  infoCompetence={infoCompetence} /> )}
         </div>
       </div>
   )
