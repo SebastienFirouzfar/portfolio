@@ -4,7 +4,7 @@ export const CardProject = (props) => {
   const { project } = props;
 
   return (
-    <div className="card text-center">
+    <div className="card text-center" id="card-project">
       <h4>{project.nameProject} </h4>
 
       <div className="overflow">
@@ -16,7 +16,7 @@ export const CardProject = (props) => {
         </a>
       </div>
 
-      <p className="paragrapheProject">{project.description}</p>
+      <p className="lead" id="paragrapheProject">{project.description}</p>
       <div className="d-flex">
         <a className="urlGitHub" href={project.urlGitHub}>Voir la page github</a>
       </div>

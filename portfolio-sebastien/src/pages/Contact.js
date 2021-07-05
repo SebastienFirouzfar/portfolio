@@ -42,7 +42,7 @@ export const Contact = () => {
 
 
   const [emailError, setEmailError] = useState("");
-  const [emailValid, setEmailValid] = useState()
+  const [emailValid, setEmailValid] = useState(false)
   const validateEmail = (e) => {
     var email = e.target.value;
 

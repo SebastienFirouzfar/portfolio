@@ -25,17 +25,18 @@ export const Home = () => {
             variants={animationOne}
             transition={transitionTitle}
           >
-            <h1>
+            <h2 className="display-2">
               Hello Welcome on the officiel web site's Sebastien Firouzfar
-            </h1>
+            </h2>
           </motion.div>
 
-          <p className="ParagrapheTypical">
+         
+          <p className="lead" id="ParagrapheTypical">
             I'm a {""}
             <Typical
               loop={Infinity}
               wrapper="b"
-              steps={["young developper", 2000, "photographer", 2000]}
+              steps={["web developper", 2000, "photographer", 2000, "Front-end",2000]}
             />
           </p>
         </div>
