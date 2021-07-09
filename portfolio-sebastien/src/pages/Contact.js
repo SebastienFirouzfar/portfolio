@@ -4,6 +4,7 @@ import { UserProfileContext } from "../lib/UserProfileContext";
 import validator from "validator";
 // import { Link } from 'react-router-dom'; 
 import emailjs from 'emailjs-com';
+import { FiSend } from 'react-icons/fi';
 
 import {animationOne, transition} from "../animation/index"
 import {motion} from 'framer-motion'
@@ -27,7 +28,7 @@ export const Contact = () => {
 
     inputs.forEach((input) => {
       // s'il n'y pas de valeur, le programme doit contenir tout les inputs qui ne sont pas valide
-      !input.value ? errors.push(input) : errors.length && errors.pop();
+      !input.value ? errors.push(input) : errors.length && errors.pop(); 
     });
 
     //s'il ya aucune erreur
@@ -181,7 +182,7 @@ export const Contact = () => {
                 type="submit"
                 placeholder="email"
                 className={`${!isValid && 'disabled'} btn btn-primary checkout`}
-              >Send message</button>
+              >Send message  <FiSend size="1em"/>  </button>
               : <p>'fill in the fields of the form and the email address must be valid to have the button' </p>} 
           </form>
         </div>
