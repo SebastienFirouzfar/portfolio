@@ -9,16 +9,23 @@ export const CardProject = (props) => {
 
       <div className="overflow">
         <a href={project.urlProject}>
-          <img src={process.env.PUBLIC_URL +`./assets/${project.category}/${project.imageProject}`}
+          <img src={ process.env.PUBLIC_URL +`./assets/${project.category}/${project.imageProject}`}
             className="card-img-top"
             alt={project.imageProject}
           />
         </a>
       </div>
 
-      <p className="lead" id="paragrapheProject">{project.description}</p>
+      <p className="lead" id="paragrapheProject">
+        {project.description}<br />
+        
+        Cliquer sur l'image pour voir le résultat
+      </p>
+
       <div className="d-flex">
-        <a className="urlGitHub" href={project.urlGitHub}>Voir la page github</a>
+        <a className="urlGitHub" href={project.urlGitHub}>
+          Voir la page github
+        </a>
       </div>
     </div>
   );
@@ -31,9 +38,9 @@ export const ListProject = (props) => {
 
   return (
     <div className="containerProject">
-      <div className="row">
+      <div className="row" id="row-project">
         {projects.map((project) => (
-          <CardProject key={project.refProject}  project={project} />
+          <CardProject key={project.refProject} project={project} />
         ))}
       </div>
     </div>

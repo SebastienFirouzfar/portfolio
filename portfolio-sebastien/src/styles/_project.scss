@@ -27,10 +27,11 @@ h3 {
 
 #paragrapheProject {
   margin: 10px auto auto;
+  padding: 10%;
 }
 
 .overflow {
-  transform: scale(1);
+  transform: scale(0.9);
   overflow: hidden;
   position: relative;
   right: 10px;
@@ -50,11 +51,16 @@ a {
 
 #card-project{
   padding: $padding ;
+  width: 30rem;
 }
 
 .urlGitHub {
   position: relative;
-  left: 24%;
+  left: 33%;
+}
+
+#row-project{
+  margin-left: 9%;
 }
 
 @media (max-width: 768px) {
