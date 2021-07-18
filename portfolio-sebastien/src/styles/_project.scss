@@ -1,5 +1,5 @@
 $margin10: 10px;
-$padding : 10px;
+$padding: 10px;
 
 h3 {
   text-align: center;
@@ -43,14 +43,14 @@ h3 {
 
 a {
   margin: $margin10;
-  padding: $padding ;
+  padding: $padding;
   text-decoration: none;
   text-align: center;
   font-family: "Staatliches", cursive;
 }
 
-#card-project{
-  padding: $padding ;
+#card-project {
+  padding: $padding;
   width: 30rem;
 }
 
@@ -59,7 +59,7 @@ a {
   left: 33%;
 }
 
-#row-project{
+#row-project {
   margin-left: 9%;
 }
 
@@ -69,5 +69,10 @@ a {
     margin: 4px 15px 17px;
     right: 2%;
     width: 18rem;
+  }
+
+  .urlGitHub {
+    position: relative;
+    left: 23%;
   }
 }
