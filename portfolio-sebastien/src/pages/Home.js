@@ -36,7 +36,7 @@ export const Home = () => {
             <Typical
               loop={Infinity}
               wrapper="b"
-              steps={["web developper", 2000, "photographer", 2000, "Front-end",2000]}
+              steps={["web developper", 2000, "Front-end",2000]}
             />
           </p>
         </div>
